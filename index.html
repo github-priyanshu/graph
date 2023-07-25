@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ai Downloads: Download here video from Youtube, Facebook & Instagram</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/graphLine.css">
+  <script src="js/script.js"></script>
+</head>
+
+<style>
+  polyline{
+    border: 1px solid #000;
+  }
+</style>
+
+<body>
+  <div class="lineMargin" m=10px></div>
+  <input type="range" min=".1" max="100" step=".1" value='40' id="scaleVal" oninput="scale=[this.value,this.value];" onchange="makeGraphLine()">
+  <div class="inPan flex c" style="width: 100%;">
+    <input type="text" class="graphIn" placeholder="Enter f(x)" style="width: 100%; padding: 10px; margin: 20px; ">
+    <div class="btnPan">
+      <button>sin(#)</button>
+      <button>cos(#)</button>
+      <button>tan(#)</button>
+
+      <button>mod(#)</button>
+      <button>sqrt(#)</button>
+      <button>cbrt(#)</button>
+
+      <button>logx(#)</button>
+      <button>exp(#)</button>
+      <button>floor(#)</button>
+    </div>
+    <div class="lineMargin" m="10px"></div>
+    <div class="go">
+      <button onclick="startMake()">Make</button>
+    </div>
+  </div>
+  <div class="graphBox flex" style="width: 100%; min-height: 100vh;" >
+    <svg id='grpSvg' style="border-radius: 5px; background: #fff; box-shadow: 0 0 13px #0001; border: 1px solid #0002; width: calc(100% - 50px); height: calc(100vh - 50px);">
+
+    </svg>
+    <div class="graphLines" style="position: absolute; width: calc(100% - 50px); height: calc(100vh - 50px); pointer-events: none;">
+      
+    </div>
+  </div>
+
+
+(1+#+#*#)* (1+#*#*#*#)/(#*#*#)<br>
+exp((#*(exp(2.3,#) - (4*#*# + # + 2)/(#*# + # + 1) )),1/4)<br>
+floor(floor(#) - #) + exp(sin(#),2)"<br>
+sqrt(#*#*#)<br>
+
+sqrt( (1+cos(2*#))/2 )<br>
+sqrt( cos(#) )<br>
+  <script src='js/graph.js'></script>
+  <script src="js/inputSystem.js"></script>
+  <script>resetFormat()</script>
+</body>
+</html>

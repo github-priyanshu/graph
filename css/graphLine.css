@@ -1,0 +1,34 @@
+.graphLines{
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.graphLines .vertical,
+.graphLines .horizontal{
+	position: absolute;
+}
+.graphLines .vertical{
+	width: 1px;
+	height: 100%;	
+	background: #0003;
+	left: calc(1px * var(--l));
+}
+.graphLines .horizontal{
+	width: 100%;
+	height: 1px;	
+	background: #0003;
+	top: calc(1px * var(--t));
+}
+
+.graphLines .vertical i,
+.graphLines .horizontal i{
+	position: absolute;
+	font-size: .8em;
+	background: #fff;
+}
+.graphLines .vertical i{
+	transform: translateX(-50%);
+}
+.graphLines .horizontal i{
+	transform: translateY(-50%);
+}
